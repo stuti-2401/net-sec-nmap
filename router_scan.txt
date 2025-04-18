@@ -1,0 +1,102 @@
+# Nmap 7.95 scan initiated Fri Apr 18 19:17:53 2025 as: nmap -sS -sV -oN router_scan.txt 192.168.1.1
+WARNING: Service 192.168.1.1:80 had already soft-matched rtsp, but now soft-matched sip; ignoring second value
+WARNING: Service 192.168.1.1:443 had already soft-matched rtsp, but now soft-matched sip; ignoring second value
+Nmap scan report for dsldevice.lan (192.168.1.1)
+Host is up (0.027s latency).
+Not shown: 987 filtered tcp ports (no-response)
+PORT      STATE  SERVICE      VERSION
+80/tcp    open   rtsp
+443/tcp   open   ssl/rtsp
+445/tcp   closed microsoft-ds
+8008/tcp  closed http
+8099/tcp  closed unknown
+49152/tcp closed unknown
+49154/tcp closed unknown
+49156/tcp closed unknown
+49158/tcp closed unknown
+49159/tcp closed unknown
+49160/tcp closed unknown
+49161/tcp closed unknown
+49163/tcp closed unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=4/18%Time=68025867%P=i686-pc-windows-windows%r(
+SF:HTTPOptions,206,"HTTP/1\.0\x20501\x20Not\x20Implemented\r\nReferrer-Pol
+SF:icy:\x20no-referrer\r\nServer:\x20thttpd\r\nContent-Type:\x20text/html;
+SF:\x20charset=utf-8\r\nDate:\x20Fri,\x2018\x20Apr\x202025\x2013:49:27\x20
+SF:GMT\r\nLast-Modified:\x20Fri,\x2018\x20Apr\x202025\x2013:49:27\x20GMT\r
+SF:\nAccept-Ranges:\x20bytes\r\nConnection:\x20close\r\nCache-Control:\x20
+SF:no-cache,no-store\r\n\r\n<HTML>\n<HEAD><TITLE>501\x20Not\x20Implemented
+SF:</TITLE></HEAD>\n<BODY\x20BGCOLOR=\"#cc9999\"\x20TEXT=\"#000000\"\x20LI
+SF:NK=\"#2020ff\"\x20VLINK=\"#4040cc\">\n<H2>501\x20Not\x20Implemented</H2
+SF:>\nThe\x20requested\x20method\x20'OPTIONS'\x20is\x20not\x20implemented\
+SF:x20by\x20this\x20server\.\n<HR>\n</BODY>\n</HTML>\n")%r(RTSPRequest,206
+SF:,"RTSP/1\.0\x20501\x20Not\x20Implemented\r\nReferrer-Policy:\x20no-refe
+SF:rrer\r\nServer:\x20thttpd\r\nContent-Type:\x20text/html;\x20charset=utf
+SF:-8\r\nDate:\x20Fri,\x2018\x20Apr\x202025\x2013:49:27\x20GMT\r\nLast-Mod
+SF:ified:\x20Fri,\x2018\x20Apr\x202025\x2013:49:27\x20GMT\r\nAccept-Ranges
+SF::\x20bytes\r\nConnection:\x20close\r\nCache-Control:\x20no-cache,no-sto
+SF:re\r\n\r\n<HTML>\n<HEAD><TITLE>501\x20Not\x20Implemented</TITLE></HEAD>
+SF:\n<BODY\x20BGCOLOR=\"#cc9999\"\x20TEXT=\"#000000\"\x20LINK=\"#2020ff\"\
+SF:x20VLINK=\"#4040cc\">\n<H2>501\x20Not\x20Implemented</H2>\nThe\x20reque
+SF:sted\x20method\x20'OPTIONS'\x20is\x20not\x20implemented\x20by\x20this\x
+SF:20server\.\n<HR>\n</BODY>\n</HTML>\n")%r(FourOhFourRequest,292,"HTTP/1\
+SF:.0\x20404\x20Not\x20Found\r\nReferrer-Policy:\x20no-referrer\r\nServer:
+SF:\x20thttpd\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x20
+SF:Fri,\x2018\x20Apr\x202025\x2013:49:27\x20GMT\r\nLast-Modified:\x20Fri,\
+SF:x2018\x20Apr\x202025\x2013:49:27\x20GMT\r\nAccept-Ranges:\x20bytes\r\nC
+SF:onnection:\x20close\r\nCache-Control:\x20no-cache,no-store\r\n\r\n<html
+SF:>\n<head>\n\n</head>\n<body>\n\t<h1\x20style=\"text-align:\x20center;\x
+SF:20height:\x20150px\">\n\t\t<span>\n\t\t\tError\x20404\x20Not\x20found\n
+SF:\t\t</span>\n\x20\x20\x20\x20</h1>\n\x20\x20\x20\x20<p\x20style=\"text-
+SF:align:center;\x20font-size:\x2016px;\x20font-weight:\x20400;\x20padding
+SF::\x2010px\x2020px;\">\n\x20\x20\x20\x20\x20\x20\x20\x20The\x20requested
+SF:\x20URL\x20was\x20not\x20found\x20on\x20this\x20server\n\x20\x20\x20\x2
+SF:0\x20</p>\n\t<div\x20style=\"text-align:\x20center;\">\n\t\t<a\x20href=
+SF:\"/\">Home</a>\n\t</div>\n</body>\n</html>\n<HR>\n</BODY>\n</HTML>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=4/18%Time=6802586D%P=i686-pc-windows-win
+SF:dows%r(GetRequest,1C11,"HTTP/1\.0\x20200\x20OK\r\nCache-Control:private
+SF:,max-age=0;\r\nX-Frame-Options:SAMEORIGIN\r\nX-Content-Type-Options:nos
+SF:niff\r\nX-XSS-Protection:1;\x20mode=block\r\nContent-Security-Policy:de
+SF:fault-src\x20'self'\x20blob:\x20'unsafe-inline'\x20'unsafe-eval';img-sr
+SF:c\x20\*\x20data:\x20'unsafe-inline'\r\nStrict-Transport-Security:max-ag
+SF:e=2592000;\x20includeSubdomains\r\nReferrer-Policy:\x20no-referrer\r\nS
+SF:et-Cookie:\x20lang=eng;\x20path=/;\r\nContent-type:text/html;charset=UT
+SF:F-8;\r\n\r\n<!--\x20vim:fenc=utf-8\r\n-->\r\n<html>\r\n<head>\r\n<title
+SF:>\r\n\r\nGPON\x20Home\x20Gateway\r\n\r\n</title>\t\t\r\n<meta\x20http-e
+SF:quiv=\"Content-Type\"\x20content=\"text/html;\x20charset=UTF-8\"\x20/>\
+SF:r\n<meta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE=edge,chrome=
+SF:1\"/>\r\n<meta\x20name=\"referrer\"\x20content=\"no-referrer\"/>\r\n<sc
+SF:ript>if\(self!=top\)\x20top\.location=self\.location\r\n\r\nif\(!window
+SF:\.name\){\r\n\x20\x20\x20\x20\x20\x20\x20\x20location\.reload\(\);\r\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20window\.name\x20=\x20'Bell';\r\n}\r\n</s
+SF:cript>\r\n<link\x20rel=\"stylesheet\"\x20href='/css_glb/main\.css'\x20t
+SF:ype='text/css'/>\r\n<")%r(HTTPOptions,206,"HTTP/1\.0\x20501\x20Not\x20I
+SF:mplemented\r\nReferrer-Policy:\x20no-referrer\r\nServer:\x20thttpd\r\nC
+SF:ontent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x20Fri,\x2018\x20A
+SF:pr\x202025\x2013:49:33\x20GMT\r\nLast-Modified:\x20Fri,\x2018\x20Apr\x2
+SF:02025\x2013:49:33\x20GMT\r\nAccept-Ranges:\x20bytes\r\nConnection:\x20c
+SF:lose\r\nCache-Control:\x20no-cache,no-store\r\n\r\n<HTML>\n<HEAD><TITLE
+SF:>501\x20Not\x20Implemented</TITLE></HEAD>\n<BODY\x20BGCOLOR=\"#cc9999\"
+SF:\x20TEXT=\"#000000\"\x20LINK=\"#2020ff\"\x20VLINK=\"#4040cc\">\n<H2>501
+SF:\x20Not\x20Implemented</H2>\nThe\x20requested\x20method\x20'OPTIONS'\x2
+SF:0is\x20not\x20implemented\x20by\x20this\x20server\.\n<HR>\n</BODY>\n</H
+SF:TML>\n")%r(FourOhFourRequest,292,"HTTP/1\.0\x20404\x20Not\x20Found\r\nR
+SF:eferrer-Policy:\x20no-referrer\r\nServer:\x20thttpd\r\nContent-Type:\x2
+SF:0text/html;\x20charset=utf-8\r\nDate:\x20Fri,\x2018\x20Apr\x202025\x201
+SF:3:49:33\x20GMT\r\nLast-Modified:\x20Fri,\x2018\x20Apr\x202025\x2013:49:
+SF:33\x20GMT\r\nAccept-Ranges:\x20bytes\r\nConnection:\x20close\r\nCache-C
+SF:ontrol:\x20no-cache,no-store\r\n\r\n<html>\n<head>\n\n</head>\n<body>\n
+SF:\t<h1\x20style=\"text-align:\x20center;\x20height:\x20150px\">\n\t\t<sp
+SF:an>\n\t\t\tError\x20404\x20Not\x20found\n\t\t</span>\n\x20\x20\x20\x20<
+SF:/h1>\n\x20\x20\x20\x20<p\x20style=\"text-align:center;\x20font-size:\x2
+SF:016px;\x20font-weight:\x20400;\x20padding:\x2010px\x2020px;\">\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20The\x20requested\x20URL\x20was\x20not\x20found
+SF:\x20on\x20this\x20server\n\x20\x20\x20\x20\x20</p>\n\t<div\x20style=\"t
+SF:ext-align:\x20center;\">\n\t\t<a\x20href=\"/\">Home</a>\n\t</div>\n</bo
+SF:dy>\n</html>\n<HR>\n</BODY>\n</HTML>\n");
+MAC Address: C8:9C:BB:28:74:D0 (Taicang T&W Electronics)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr 18 19:19:48 2025 -- 1 IP address (1 host up) scanned in 114.86 seconds
